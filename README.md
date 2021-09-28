@@ -89,3 +89,5 @@ Sept 15:
 -I got a call from Jan Fairchild. He works on sound and referred by Br. Jay. Jan suggested a piano option for the sound.
 Sept 18:
 - I added a new (better) asynchronous loader for the time signatures. They had been balking during Medley mode.
+Sept 27:
+- I'm putting the current files on Git
