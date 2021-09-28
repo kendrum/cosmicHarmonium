@@ -1,0 +1,59 @@
+<!-- This first section (style) is Internal CSS.  -->
+<!-- External CSS is used for larger programs and is in a separate file. -->
+<!-- We will do a little Inline CSS right in the HTML, though that is discouraged. -->
+<!-- Inline CSS overrides Internal CSS, which overrides External CSS. Thus the name "Cascading Style Sheets." -->
+<style>
+/* This is a CSS comment */
+	h1 {color: blue; font-size: 50px;}
+	p {
+		color: green; 
+	}
+	#test {color: blue;}
+	button {background: cornsilk; font-size: 20px;}
+	#textChange {font-size: 30px;}
+	#timer {font-size: 50px; margin-left: 100px;}
+	a {font-size: 30px}
+</style>
+
+<!-- This begins the HTML section -->
+<h1>Javascript Testing</h1>
+<span id = "timer">tock</span>
+<p>This is a paragraph in green color.</p>
+<p id = "test">This paragraph uses an ID (referred to in the CSS as #test)</p>
+<span style = "color: red; background: lightblue">Here we use Inline CSS. It is discouraged because it can quickly clutter up your HTML, but can be good for quick testing.</span><br><br>
+<button id = "buttonTest1" onclick = "text1()">Press me to change text</button><br><br>
+<button id = "buttonTest2" onclick = "text2()">Press for alternate text</button><br><br>
+<span id = "textChange">This is the beginning text for this div or division</span><br><br>
+<a href = "http://www.waveofthesea.com/harmonium.html">Cosmic Harmonium</a><br>
+<img src = "http://waveofthesea.com/keySignatures/B.jpg" width = "300px">
+
+
+<!-- This begins the JavaScript section -->
+<script>
+	// This is a single-line javascript comment
+	/* This is a javascript comment, 
+	usually used on multiple lines. */
+	function text1() {
+		document.getElementById("textChange").innerHTML = "Hey Dan, this is the way to use JS to replace text."
+		document.getElementById("textChange").style.color = "red"
+	}
+	
+	function text2() {
+		let element = document.getElementById("textChange")
+		element.innerHTML = "Hello. This is some different text."
+		element.style.color = "blue"
+	}
+	
+	// A simple timer
+	let second = 0
+	let minute = 0
+	let hour = 0
+	setInterval(function() {
+		document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + second
+		second ++
+		if (second == 60) {second = 0; minute ++; console.log(minute)}
+		if (minute == 60) {minute = 0; hour ++; console.log(hour)}
+	}, 1000) // Count is every 1000 ms (every second)
+
+</script>
+

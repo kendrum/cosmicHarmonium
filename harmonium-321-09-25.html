@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cosmic Harmonium</title>
+	<link href  = "harmonium-321-09-25.css" rel="stylesheet">
+	<script defer src = "utils-321-09-25.js"></script>
+	<script defer src = "keyboard-321-09-25.js"></script>
+	<script defer src = "sliders-321-09-25.js"></script>
+	<script defer src = "audio-321-09-25.js"></script>
+	<script defer src = "main-321-09-25.js"></script>
+	<script defer src = "inputs-321-09-25.js"></script>
+	<script defer src = "chantsAndSongs-321-09-25.js"></script>
+	<script defer src = "displayWordsAndNotes-321-09-25.js"></script>
+	<script defer src = "animate-321-09-25.js"></script>
+<!--Also update:
+	moreInfo.html
+	listOfChantsAlphabetical.txt
+	Directories:
+		notes
+		keySignatures
+-->
+</head>
+<body onkeydown = "keyPressed(event)">	<!-- Includes keyboard arrows, spacebar, etc. -->
+
+<div id = "greenBackground"></div>
+
+<svg id="svg1" class="svg-content" viewBox="0 70 1220 118"></svg>
+
+<!-- Control Box -->
+<div id = "controlBox">
+	<button class = "buttons"	id = "stopChant" onclick = "stopChant()">	 Stop	</button>
+	<button class = "buttons"	id = "playChant" onclick = "playButton()"> Play	</button>
+
+	<!-- MEDLEY Switch -->
+	<span id = "medley">Medley</span>
+	<label class="switch">
+		<input type="checkbox" id = "medleySlider" onclick = "medleySlider()"></input>
+		<span class="slider round" onmousemove = "showTooltipMedley(event)" onmouseout = "hideTooltip()"></span>
+		<span id = "tooltipMedley">Play <strong>all the chants</strong> automatically</span>
+	</label>
+
+	<!-- REPEAT Switch -->
+	<span id = "repeat">Repeat</span>
+	<label class="switch2">
+		<input type="checkbox" id = "repeatSlider" onclick = "repeatSlider()"></input>
+		<span class="slider2 round2" onmousemove = "showTooltipRepeat(event)" onmouseout = "hideTooltip()"></span>
+		<span id = "tooltipRepeat">Play the <strong>same chant</strong> over and over</span>
+	</label>
+
+	<!-- UpARROW on screen-->
+	<svg id = "upArrow"  onclick = "playPreviousChant()" viewBox = "0 0 20 70">
+		<polyline points = "10,0 0,10 5,10 5,35 15,35 15,10 20,10 10,0" onmousemove = "showTooltipUpArrow(event)" onmouseout="hideTooltip()">
+		<div id = "tooltipUpArrow">Play the <strong>previous</strong> chant</div>
+	</svg>
+	
+	<!-- DownARROW on Screen-->
+	<svg id = "downArrow" onclick = "playNextChant()" viewBox = "0 0 20 70">
+		<polyline points = "5,0 5,25 0,25 10,35 20,25 15,25 15,0 5,0" onmousemove = "showTooltipDownArrow(event)" onmouseout="hideTooltip()">
+		<div id = "tooltipDownArrow">Play the <strong>next</strong> chant</div>
+	</svg>
+
+</div>
+
+<div id = "displayBox">
+
+	<!-- Into for each chant -->
+	<img id="trebleClef">
+	<span id="nameOfKeySignature"></span>
+	<span id="keySignature"></span>
+	<span id="songTime"></span>
+
+	<!-- Range Sliders for Volume & Tempo -->
+	<div class = "customSlider" id = "customSlider1">
+		<div class = "thumb" id = "thumb1"></div>
+	</div>
+	<div class = "customSlider" id = "customSlider2">
+		<div class = "thumb" id = "thumb2"></div>
+	</div>
+	<label id = "volumeLabel">Volume</label>
+	<label id = "tempoLabel">Tempo</label>
+	
+	<!-- Metronome -->
+	<svg id = "metronomeLeft" 	viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" stroke="black" stroke-width="1" /></svg>
+	<svg id = "metronomeRight"  viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" stroke="black" stroke-width="1" /></svg>
+	
+</div>
+
+<!-- Song Title -->
+<span id="songTitle"></span>
+
+<!-- Scale Changer -->
+<span id = "keyName">keyNum</span>
+<button id = "scaleDown" onclick = "keyNumDown()"><</button>
+<span id = "scaleChangerLabel1">Scale Changer</span>
+<span id = "scaleChangerLabel2">(experimental)</span>
+<button id = "scaleUp" onclick = "keyNumUp()">></button>
+
+<!-- MORE INFO - Instructions to User -->
+<!-- <a href = "moreInfo.html"><button id="moreInfo" onmousemove="showTooltip5(evt, 'Instructions and more information about COSMIC HARMONIUM')" onmouseout="hideTooltip()">More Info -->
+<a href = "moreInfo.html">
+	<button id="moreInfo" onmousemove = "showTooltipMoreInfo(event)" onmouseout = "hideTooltip()">More Info 
+		<span id="tooltipMoreInfo"><strong>Instructions</strong> and more information about COSMIC HARMONIUM</span>
+	</button>
+</a>
+
+<!-- Display -->
+<div id = "display"></div>
+
+<!-- Chant List -->
+<div id = "chantList"></div>
+
+	<!-- Testing -->
+<!-- <span id = "test">Safari Test Messages</span> -->
+<!-- <span id = "test1">1 testing</span> -->
+<!-- <span id = "test2">2</span> -->
+<!-- <span id = "test3">3</span> -->
+<!-- <span id = "test4">4</span> -->
+<!-- <span id = "test5">5</span> -->
+<!-- <span id = "test6"></span> -->
+<!-- <span id = "test7"></span> -->
+<!-- <span id = "test8"></span> -->
+<!-- <span id = "test9"></span> -->
+
+</body>
+</html>

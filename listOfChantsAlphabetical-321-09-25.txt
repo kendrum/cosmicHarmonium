@@ -1,0 +1,66 @@
+<div id ="chant1" class = "chants"			onclick = "playChant(1)">At Thy Feet												</div>
+<div id ="chant2" class = "chants"			onclick = "playChant(2)">Blue Lotus Feet										</div>
+<div id ="chant3" class = "chants"			onclick = "playChant(3)">Cloud-Colored Christ - 1				 	</div>
+<div id ="chant4" class = "chants"			onclick = "playChant(4)">Cloud-Colored Christ - 2				 	</div>
+<div id ="chant5" class = "chants"			onclick = "playChant(5)">Come, Listen To My Soul Song			 	</div>
+<div id ="chant6" class = "chants"			onclick = "playChant(6)">Dawn Chant												 	</div>
+<div id ="chant7" class = "chants"			onclick = "playChant(7)">Deliver Us From Delusion					 	</div>
+<!-- <div id ="chant8" class = "chants new" onclick = "playChant(8)">Desire, My Great Enemy						 </div> -->
+<!-- <div id ="chant9" class = "chants new" onclick = "playChant(9)">Divine Gypsy											 </div> -->
+<div id ="chant10" class = "chants"			onclick = "playChant(10)">Divine Mother's Song To The Devotee</div>
+<div id ="chant11" class = "chants" 			onclick = "playChant(11) ">Do Not Dry The Ocean Of My Love		 </div>
+<div id ="chant12" class = "chants"			onclick = "playChant(12)">Door of My Heart									 </div>
+<!-- <div id ="chant13" class = "chants new" onclick = "playChant(13)">Ever New Joy											 </div> -->
+<!-- <div id ="chant14" class = "chants new" onclick = "playChant(14)">From This Sleep, Lord							 </div> -->
+<!-- <div id ="chant15" class = "chants new" onclick = "playChant(15)">Hay Hari Sundara									 </div> -->
+<!-- <div id ="chant16" class = "chants new" onclick = "playChant(16)">He Who Knows											 </div> -->
+<!-- <div id ="chant17" class = "chants new"	onclick = "playChant(76)">Hymn To Brahma - English					 </div> -->
+<div id ="chant18" class = "chants"			onclick = "playChant(18)">Hymn To Brahma - Sanskrit					 </div>
+<div id ="chant19" class = "chants"			onclick = "playChant(19)">I Am The Bubble, Make Me the Sea	 </div>
+<!-- <div id ="chant20" class = "chants new" onclick = "playChant(20)">I Am Om - 1												 </div> -->
+<!-- <div id ="chant21" class = "chants new" onclick = "playChant(21)">I Am Om - 2												 </div> -->
+<div id ="chant22" class = "chants"			onclick = "playChant(22)">I Am The Sky											 </div>
+<!-- <div id ="chant23" class = "chants new" onclick = "playChant(23)">I Give You My Soul Call						 </div> -->
+<!-- <div id ="chant24" class = "chants new" onclick = "playChant(24)">In Samadhi												 </div> -->
+<!-- <div id ="chant25" class = "chants new" onclick = "playChant(25)">In The Land Beyond My Dreams			 </div> -->
+<!-- <div id ="chant26" class = "chants new" onclick = "playChant(26)">In The Temple Of Silence					 </div> -->
+<div id ="chant27" class = "chants"			onclick = "playChant(27)">In The Valley Of Sorrow						 </div>
+<div id ="chant28" class = "chants" 			onclick = "playChant(28) ">Invocation To The Gurus						 </div>
+<!-- <div id ="chant29" class = "chants new" onclick = "playChant(29)">I Will Be Thine Always						 </div> -->
+<!-- <div id ="chant30" class = "chants new" onclick = "playChant(30)">I Will Sing Thy Name							 </div> -->
+<!-- <div id ="chant31" class = "chants new" onclick = "playChant(31)">Jai Guru													 </div> -->
+<!-- <div id ="chant32" class = "chants new" onclick = "playChant(32)">Learn Thou Self-Control						 </div> -->
+<div id ="chant33" class = "chants" 		onclick = "playChant(33)">Light the Lamp Of Thy Love				 </div>
+<div id ="chant34" class = "chants"			onclick = "playChant(34)">Listen, Listen, Listen						 </div>
+<!-- <div id ="chant35" class = "chants new" onclick = "playChant(35)">My Krishna Is Blue								 </div> -->
+<!-- <div id ="chant36" class = "chants new" onclick = "playChant(36)">No Birth, No Death								 </div> -->
+<div id ="chant37" class = "chants"		 	onclick = "playChant(37)">O God Beautiful										 </div>
+<!-- <div id ="chant38" class = "chants new" onclick = "playChant(38)">Om Chant													 </div> -->
+<!-- <div id ="chant39" class = "chants new" onclick = "playChant(39)">Om Kali														 </div> -->
+<!-- <div id ="chant40" class = "chants new" onclick = "playChant(40)">Om Song														 </div> -->
+<!-- <div id ="chant41" class = "chants new" onclick = "playChant(41)">Opal Flame												 </div> -->
+<!-- <div id ="chant42" class = "chants new" onclick = "playChant(42)">O Thou Blue Sky										 </div> -->
+<div id ="chant43" class = "chants" 		onclick = "playChant(43)">O Thou King of the Infinite				 </div>
+<div id ="chant44" class = "chants" 			onclick = "playChant(44) ">Polestar Of My Life								 </div>
+<!-- <div id ="chant45" class = "chants new" onclick = "playChan5(45)">Receive Me On Thy Lap, O Mother		 </div> -->
+<!-- <div id ="chant46" class = "chants new" onclick = "playChant(46)">Rose Chant												 </div> -->
+<div id ="chant47" class = "chants"			onclick = "playChant(47)">Search Him Out In Secret					 </div>
+<!-- <div id ="chant48" class = "chants new" onclick = "playChant(48)">Shanti Mondire										 </div> -->
+<!-- <div id ="chant49" class = "chants new" onclick = "playChant(49)">Spirit And Nature									 </div> -->
+<!-- <div id ="chant50" class = "chants new" onclick = "playChant(50)">Swami Ram Tirtha's Song						 </div> -->
+<!-- <div id ="chant51" class = "chants new" onclick = "playChant(51)">They Have Heard Thy Name					 </div> -->
+<!-- <div id ="chant52" class = "chants new" onclick = "playChant(52)">Thou Art My Life - 1							 </div> -->
+<!-- <div id ="chant53" class = "chants new" onclick = "playChant(53)">Thou Art My Life - 2							 </div> -->
+<!-- <div id ="chant54" class = "chants new" onclick = "playChant(54)">Thousands Of Suns									 </div> -->
+<!-- <div id ="chant55" class = "chants new" onclick = "playChant(55)">Today My Mind Has Dived						 </div> -->
+<!-- <div id ="chant56" class = "chants new" onclick = "playChant(56)">Wake, Yet Wake, O My Saint				 </div> -->
+<div id ="chant57" class = "chants"		  onclick = "playChant(57)">What Lightning Flash							 </div>
+<div id ="chant58" class = "chants"			onclick = "playChant(58)">When My Dream's Dream Is Done	-	1	 </div>
+<!-- <div id ="chant59" class = "chants new" onclick = "playChant(59)">When My Dream's Dream Is Done - 2	 </div> -->
+<div id ="chant60" class = "chants" 		onclick = "playChant(60)">When Thy Song Flows Through Me - 1 </div>
+<div id ="chant61" class = "chants" 		onclick = "playChant(61)">When Thy Song Flows Through Me - 2 </div>
+<div id ="chant62" class = "chants"			onclick = "playChant(62)">Where Is There Love?							 </div>
+<!-- <div id ="chant63" class = "chants new" onclick = "playChant(63)">Who Is In My Temple?							 </div> -->
+<div id ="chant64" class = "chants"			onclick = "playChant(64)">Why, O Mind, Wanderest Thou?				 </div>
+<!-- <div id ="chant65" class = "chants new" onclick = "playChant(65)">Will That Day Come To Me, Mother?	 </div> -->
+<div id ="chant66" class = "chants" 		onclick = "playChant(66)">Wink Has Not Touched My Eyes			 </div>

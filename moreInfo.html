@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cosmic Harmonium</title>
+	<style>
+		body {font-size: 1.6vw}
+		button, a {text-decoration: none;}
+		h1 {display: inline; font-size: 3.2vw;}
+		h2 {display: inline; font-size: 2.2vw;}
+		#welcome {font-size: 4vw}
+		#goBack {position: fixed; left: 70vw; top: 1vw; font-size: 2vw; background-color: #bef; border-radius: 8px;}
+		p {font-size: 1.9vw;}
+		#howToHeading {font-size: 2.0vw;}
+		#howTo {font-size: 2.0vw;}
+		table, td, th {
+			border: 1px solid #888;
+			border-collapse: collapse;
+			text-align: left;
+			padding: 8px;
+		}		
+	</style>
+</head>
+<body>
+
+<!-- <h1>Welcome to Cosmic Harmonium</h1>  <button id = "goBack" onclick = "goBack()">Return to main page</button><br> -->
+<h1>Welcome to Cosmic Harmonium</h1>  <button id = "goBack" ><a href = "harmonium.html">Return to main page</a></button><br>
+	- Learn the correct notes and timing of the SRF Chants.<br>
+	- Play along with a keyboard or harmonium that has a conversion package (not yet enabled).<br>
+	- Listen with headphones so as not to disturb roommates.<br>
+	- Easy scale changing (under development).<br><br>
+
+<h2>How to Play the Chants - Different Methods</h2><br>
+	- Press the PLAY button.<br>
+	- Click on the name of the chant that you want to play. (The chants in grey color are not yet available.)<br>
+	- Press the space bar on your keyboard to start or stop the playing.<br>
+	- Press the large up or down arrows on the screen.<br>
+	- Use the arrow keys on your keyboard to go to the previous or next chant.<br>
+	- Press the MEDLEY button to auto play all the chants.<br>
+	- Press the REPEAT button to play one chant over and over.<br>
+	- The left and right arrow keys on your keyboard will let you go forwards or backwards in a particular chant.<br><br>
+	
+	- Volume can be adjusted with the VOLUME control.<br>
+	- The speed of a chant can be changed using the TEMPO control.<br><br>
+	
+<h2>Notes</h2><br>
+	- This software is not yet designed for use on cellphones or other portable device. Use a full-size screen if possible.<br>
+	- The chants use the same notes and timing as <em>Cosmic Chants</em> - Sixth edition, second printing, 1987, but some of them are being adjusted to match projected changes in a future printing of CC.<br>
+	- The chants are listed alphabetically.<br>
+	- The musical notes are all recorded individually from an actual harmonium.<br>
+	- Where the fermata &#x1D110; symbol is used in a chant, the length of the note is usually doubled.<br><br>
+	
+<h2>Timing Adjustments</h2><br>
+For simplicity of notation and ease of playing, the timing notation on some of the chants has been adjusted. However, the actual timing 
+remains the same as in <em>Cosmic Chants.</em> Where <em>Cosmic Chants</em> shows Free timing, an arbitrary timing has been given to the computer; you can adjust this timing to a faster or slower rate using the TEMPO Slider.<br>
+[bpm = beats per minute]<br>
+<table><tr><th><th>Cosmic Chants<th>Cosmic Harmonium<th>Notes
+<tr><td>Cloud-Colored Christ - 1<td>96 bpm on quarter note<td>192 bpm on 8th note<td>Last line slightly different<br> as in upcoming CC edition
+<tr><td>Cloud-Colored Christ - 2<td>96 bpm on quarter note<td>192 bpm on 8th note
+<tr><td>Come, Listen toMy Soul Song<td>Free<td>138 bpm on 1/4 note
+<tr><td>Deliver Us From Delusion<td>Free<td>200 bpm on 8th note
+<tr><td>Dawn Chant<td>120 bpm on quarter note<td>240 bpm on 8th note
+<tr><td>Hymn to Brahma - Sanskrit<td>Free<td>120 bpm on quarter note
+<tr><td>I Am the Bubble, Make Me the Sea<td>60 bpm on 3/8 note<td>180 bpm on 8th note
+<tr><td>In the Valley of Sorrow<td>Free<td>180 bpm on 8th note
+<tr><td>Invocation to the Gurus<td>88 bpm on quarter note<td>176 bpm on 8th note
+<tr><td>Listen, Listen, Listen<td>108 bpm on quarter note<td>216 bpm on 8th note
+<tr><td>O, Thou King of the Infinite<td>100 bpm on quarter note<td>200 bpm on 8th note
+<tr><td>When My Dreams Dream Is Done - 1<td>Free<td>300 bpm on 24th note
+<tr><td>Where Is There Love?<td>80 bpm on quarter note<td>160 bpm on 8th note
+<tr><td>Wink Has Not Touched My Eyes<td>100 bpm on quarter note<td>200 bpm on 8th note
+</table><br><br>
+
+<h2>Scale Changer</h2><br>
+	Each chant uses the key or scale that is shown in "Cosmic Chants." However many devotees prefer to use a different key for certain chants. For example, you may wish to play on mostly white notes&mdash;in the key of C or A minor. Or you may want to choose a higher or lower key to match your voice. The Scale Changer can help you to easily change to a different key. The Scale Changer is still under development and must currently be adjusted separately for each chant. Also, it does not yet modify the displayed notes to match the new scale. Press STOP or PLAY to exit the Scale Changer and revert back to the standard key for a chant.<br><br>
+	
+<h2>Electronic Harmonium - Future Design Ideas</h2><br>
+	A regular harmonium can be used. Microswitches are added to detect each key that is pressed. This signal is fed into an arduino or raspberry pi board, which contains a program similar to this Cosmic Harmonium software. A display (such as a Tablet) is mounted on top of the harmonium. An air pressure sensor can be added to respond to pumping of the bellows, thus minutely controlling the volume. Speakers and a headphone jack are also added.<br><br>
+	
+	Alternatively, an alectronic key assembly (with microswitches already attached) can be used and it can either be built into an existing harmonium, or a harmonium built around it.<br><br>
+	
+	The benefits of an electronic harmonium are quiet individual practicing (with headphones), teaching mode with slow speeds for learning, automatic playing for those who do not know how to play, and easy scale adjustments for individual preferences of keystrokes.<br><br>
+	
+	This present software is far from complete. It is designed to give some idea of how an electronic harmonium may function.<br><br>
+	
+	Participation in the project is invited, such as help with electronics, mechanics and fabrication, software, and adding additional chants.<br><br>
+	
+	Future modes to be added to the software are TEACHING MODE and CONCERT MODE.<br><br>
+	
+	For questions and comments, please contact me at kevinsrf@msn.com.<br><br>
+<script>
+	function goBack() {
+		moreInfo.html
+		//window.history.back()
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cosmic Harmonium</title>
+	<script src = "utils-321-09-25.js"></script>
+	<style>
+		body						{background: #fffae0;}
+		a								{text-decoration: none}
+		#heading				{position: fixed;		 left: 0.0vw; top: 0.0vw; color: #22c;}
+		sup 						{position: absolute; left: 0.0vw; top: 0.0vw; font-size: 7.01vw;}
+		sub 						{position: absolute; left: 1.7vw; top: 3.7vw; font-size: 7.01vw;}
+		#heading1 			{position: absolute; left: 2.1vw; top: 0.9vw; font-size: 4.81vw;}
+		#heading2 			{position: absolute; left: 6.1vw; top: 4.4vw; font-size: 4.81vw;}
+
+		#harmoniumWithIpad {position: absolute; left: 3vw; top: 12.4vw; width: 25vw; font-size: 4.81vw;}
+
+		#intro					{position: absolute; left: 40.0vw; top: 3.0vw; font-size: 1.8vw; width: 50vw;}
+
+		#playHarmonium {position: absolute; left: 35vw; top: 22vw; padding: 1vw; border: 1px solid #aaa; border-radius: 1.5vw; background: #eee;}
+		#playHarmonium1 {font-size: 2.37vw;}
+		#playHarmonium2 {font-size: 1.20vw;}
+
+		#oldVersion1 {position: absolute; left: 70vw; top: 34vw; padding: 1vw; background: #eee;}
+
+		/* Tooltip Version Date info */
+		#tooltipVersionDate {display: none; font-size: 1.4vw; background-color: #ffc; color: #555; border: 1px solid #aaa; border-radius: 1vw; padding: .5vw 0; width: 27.2vw; text-align: center;}
+
+		/* Tooltip Harmonium Photo 1 */
+		#tooltipHarmoniumPhoto1 {display: none; font-size: 1.4vw; background-color: #ffc; color: #555; border: 1px solid #aaa; border-radius: 1vw; padding: .5vw 0; width: 27.0vw; text-align: center; z-index: 1;}
+		
+</style>
+</head>
+<body>
+	<div id = "heading"><sup>C</sup><sub>H</sub><span id = "heading1">osmic</span><span id = "heading2">armonium</span></div>
+
+	<img id = "harmoniumWithIpad" src = "harmoniumWithIpad.png" onmousemove = "tooltipHarmoniumPhoto1(event)" onmouseout="hideTooltip()">
+	<span id = "tooltipHarmoniumPhoto1">This is an example of an "electronic harmonium." It plays like a regular harmonium but the chants are heard through speakers or headphones. You will be able to tap on the display to hear and see the chants being played. Or play them yourself on the keyboard. The electronic harmonium will teach you how to play with the correct notes and timing.</span>
+
+	<p id = "intro"><strong>Cosmic Harmonium</strong> helps you learn to play the chants correctly as shown in <em>Cosmic Chants</em>. As much as possible, the notes and timing are identical with those in the book.<br><br>
+
+	You can play the chants individually, or play all the chants sequentially in a medley. If necessary, the key, speed, and volume are adjustable.</p>
+
+	<a href = "harmonium-321-09-25.html" id = "playHarmonium">
+		<span id = "playHarmonium1">Play Cosmic Harmonium Now</span><br>
+		<span id = "playHarmonium2" onmousemove = "tooltipVersionDate(event)" onmouseout="hideTooltip()">Latest Version 321-09-25</span>
+		<span id = "tooltipVersionDate">The version name is based on the date when it was created, using the Yuga dating system as explained by Sri Yukteswar in <em>The Holy Science.</em> For simplicity, 321 Dwapara is substituted for 2021 A.D. For example 321-09-25 is September 25th, 2021. Sri Yukteswar suggested the use of the Yuga dating system, since it "recommends itself to reason."</span>
+	</a>
+		
+	<!-- <a id = "oldVersion1" href = "harmonium-321-09-05.html"  onmousemove = "tooltipVersionDate1(event)" onmouseout="hideTooltip()">Older Version 321-09-05</a> -->
+
+	<script>
+		function tooltipVersionDate(event) {
+			let tooltiptext = document.getElementById("tooltipVersionDate")
+			tooltiptext.style.display = "block"
+			tooltiptext.style.position = "fixed"
+			tooltiptext.style.left = toVW(event.pageX) - 9.0 + 'vw'
+			tooltiptext.style.top = 29.5  + 'vw'
+		}
+
+		function tooltipVersionDate1(event) {
+			let tooltiptext = document.getElementById("tooltipVersionDate1")
+			tooltiptext.style.display = "block"
+			tooltiptext.style.position = "fixed"
+			tooltiptext.style.left = toVW(event.pageX) - 33.0 + 'vw'
+			tooltiptext.style.top = 29.5  + 'vw'
+		}
+		function tooltipHarmoniumPhoto1(event) {
+			let tooltiptext = document.getElementById("tooltipHarmoniumPhoto1")
+			tooltiptext.style.display = "block"
+			tooltiptext.style.position = "fixed"
+			tooltiptext.style.left = toVW(event.pageX) - 3 + 'vw'
+			<!-- tooltiptext.style.top = 32.0  + 'vw' -->
+			tooltiptext.style.top = toVW(event.pageY) + 2.0  + 'vw'
+		}
+
+		
+	function hideTooltip() {
+	console.log("hide tooltip")
+			document.getElementById("tooltipVersionDate").style.display = "none"
+			//document.getElementById("tooltipVersionDate1").style.display = "none"
+			document.getElementById("tooltipHarmoniumPhoto1").style.display = "none"
+		}
+
+	</script>
+</body>
+</html>
