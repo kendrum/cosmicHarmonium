@@ -1,1 +1,1 @@
-Cosmic Harmonium helps you to learn to play the chants correctly.
+Cosmic Harmonium will help you learn to play the chants correctly.
